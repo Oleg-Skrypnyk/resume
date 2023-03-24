@@ -550,6 +550,8 @@ img {
 
 .about-me-container {
   padding: 30px 35px 30px 35px;
+  padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+  padding-right: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
 }
 
 .about-me-container.light-theme {
@@ -677,6 +679,10 @@ img {
   line-height: 1.7;
 }
 
+.education-duties .profession-duties-item {
+  margin-left: 0;
+}
+
 .profession-achievements {
   margin: 0;
   margin-bottom: 25px;
@@ -698,6 +704,7 @@ img {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7;
+  list-style: none;
 }
 
 .dots {

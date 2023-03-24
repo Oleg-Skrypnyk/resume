@@ -1,6 +1,9 @@
 .about-me-container {
   padding: 30px 35px 30px 35px;
 
+  padding-left: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+  padding-right: calc((100vw - 320px) / (480 - 320) * (40 - 30) + 30px);
+
   &.light-theme {
     background-color: $sidebar-text-color;
   }
@@ -125,6 +128,10 @@
   line-height: 1.7;
 }
 
+.education-duties .profession-duties-item {
+  margin-left: 0;
+}
+
 .profession-achievements {
   margin: 0;
   margin-bottom: 25px;
@@ -142,6 +149,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   @include font(14px, $font-weight-norm, 1.7);
+  list-style: none;
 }
 
 // .education-name {
