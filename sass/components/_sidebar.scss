@@ -1,0 +1,123 @@
+.sidebar {
+  background: $sidebar-bg-color;
+  // min-width: 330px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 330px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 370px;
+  }
+}
+
+.info-mob {
+  padding: 30px 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .profession-mob {
+    margin-bottom: 25px;
+    @include font(14px, $font-weight-norm, 1.7);
+    color: $sidebar-text-color;
+  }
+
+  .name-mob {
+    @include font(35px, 700, 60px);
+    color: $sidebar-text-color;
+  }
+
+  .personal-mob {
+    color: $item-sidebar-color;
+    @include font(12px, $font-weight-norm, 2);
+  }
+}
+
+.my-photo {
+  width: 100%;
+}
+
+.contacts-container {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contacts-title,
+.skills-title {
+  margin-bottom: 10px;
+  @include font(22px, $font-weight-bolt, 1.08);
+
+  color: $sidebar-text-color;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  text-decoration: none;
+  @include font(14px, $font-weight-norm, 1.7);
+  color: $item-sidebar-color;
+
+  @include transition(color, font-weight, font-size);
+
+  &:hover,
+  &:focus,
+  .contact-block:hover &,
+  .contact-block:focus & {
+    color: $accent-color;
+    // text-decoration: underline;
+    @include font(14.5px, 500, 1.7);
+  }
+}
+
+.icon-contacts {
+  margin-right: 5px;
+}
+
+.icon {
+  fill: $item-sidebar-color;
+  @include transit(fill);
+
+  .contacts-link:hover &,
+  .contacts-link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.contacts-link-type {
+  margin-right: 10px;
+  @include font(14px, $font-weight-bolt, 1.7);
+
+  color: $sidebar-text-color;
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    cursor: pointer;
+  }
+}
+
+// .icon {
+//   fill: #fff;
+// }
+
+.skills-container {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.skills-item {
+  margin-left: 20px;
+  @include font(14px, $font-weight-norm, 1.7);
+  color: $accent-color;
+
+  .skills-text {
+    color: $item-sidebar-color;
+  }
+}
