@@ -357,7 +357,7 @@ body.light-theme {
 body.dark-theme {
   background-color: #595959;
   color: #d6d8db;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -560,7 +560,6 @@ img {
 
 .about-me-container.dark-theme {
   background-color: #1e2939;
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -664,7 +663,7 @@ img {
 }
 
 .profession-divider {
-  color: #000;
+  color: #a8a8a8;
 }
 
 .profession-duties {
