@@ -26,13 +26,26 @@
   }
 
   .name-mob {
-    @include font(35px, 700, 60px);
+    // @include font(35px, 700, 60px);
     color: $sidebar-text-color;
+    font-weight: $font-weight-bolt;
+    @media screen and (max-width: 480px) {
+      font-size: calc((100vw - 320px) / (480 - 320) * (30 - 24) + 24px);
+    }
+
+    @media screen and (min-width: 481px) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: 960px) {
+      font-size: 35px;
+    }
   }
 
   .personal-mob {
-    color: $item-sidebar-color;
+    // color: $item-sidebar-color;
     @include font(12px, $font-weight-norm, 2);
+    color: $secondary-text-color;
   }
 }
 

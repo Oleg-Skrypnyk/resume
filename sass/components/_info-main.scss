@@ -1,5 +1,5 @@
 .about-me-container {
-  padding: 50px 35px 30px 35px;
+  padding: 30px 35px 30px 35px;
 
   &.light-theme {
     background-color: $sidebar-text-color;
@@ -11,10 +11,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 75px;
-    padding-bottom: 30px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 75px 75px 30px 75px;
   }
 }
 
@@ -34,7 +31,7 @@
   }
 
   .name {
-    @include font(35px, 700, 60px);
+    @include font(30px, 700, 60px);
   }
 
   .personal {

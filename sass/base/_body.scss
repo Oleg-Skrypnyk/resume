@@ -13,9 +13,9 @@ body {
     padding: 0;
   }
 
-  // @media print {
-  //   display: none;
-  // }
+  @media print {
+    display: none;
+  }
 }
 
 body.light-theme {

@@ -343,6 +343,12 @@ body {
   }
 }
 
+@media print {
+  body {
+    display: none;
+  }
+}
+
 body.light-theme {
   background-color: #f5f7fa;
   color: #000;
@@ -416,17 +422,33 @@ img {
 }
 
 .info-mob .name-mob {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 60px;
   color: #fff;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .info-mob .name-mob {
+    font-size: calc((100vw - 320px) / (480 - 320) * (30 - 24) + 24px);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .info-mob .name-mob {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .info-mob .name-mob {
+    font-size: 35px;
+  }
 }
 
 .info-mob .personal-mob {
-  color: #d6d8db;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
+  color: #a8a8a8;
 }
 
 .my-photo {
@@ -527,7 +549,7 @@ img {
 }
 
 .about-me-container {
-  padding: 50px 35px 30px 35px;
+  padding: 30px 35px 30px 35px;
 }
 
 .about-me-container.light-theme {
@@ -541,10 +563,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .about-me-container {
-    padding-top: 75px;
-    padding-bottom: 30px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 75px 75px 30px 75px;
   }
 }
 
@@ -570,7 +589,7 @@ img {
 }
 
 .info-container .name {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 60px;
 }
