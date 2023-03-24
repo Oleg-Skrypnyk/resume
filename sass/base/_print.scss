@@ -198,7 +198,8 @@
   }
 
   .dots {
-    color: $dots-color;
-    font-weight: 100;
+    display: none;
+    // color: $dots-color;
+    // font-weight: 100;
   }
 }
