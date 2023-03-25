@@ -31,6 +31,22 @@
     margin-right: 8px;
   }
 
+  .light-theme &__icon--sun {
+    color: $accent-color;
+  }
+
+  .light-theme &__icon--moon {
+    color: $secondary-text-color;
+  }
+
+  .dark-theme &__icon--sun {
+    color: $secondary-text-color;
+  }
+
+  .dark-theme &__icon--moon {
+    color: $accent-color;
+  }
+
   &__control {
     display: flex;
     align-items: center;

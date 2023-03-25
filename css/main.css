@@ -794,6 +794,22 @@ img {
   margin-right: 8px;
 }
 
+.light-theme .theme-switch__icon--sun {
+  color: #ff6b08;
+}
+
+.light-theme .theme-switch__icon--moon {
+  color: #a8a8a8;
+}
+
+.dark-theme .theme-switch__icon--sun {
+  color: #a8a8a8;
+}
+
+.dark-theme .theme-switch__icon--moon {
+  color: #ff6b08;
+}
+
 .theme-switch__control {
   display: -webkit-box;
   display: -ms-flexbox;
