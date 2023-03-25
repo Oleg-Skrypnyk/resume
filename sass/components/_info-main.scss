@@ -10,11 +10,10 @@
 
   &.dark-theme {
     background-color: $sidebar-bg-color;
-    // color: $sidebar-text-color;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 75px 75px 30px 75px;
+    padding: 50px 75px 30px 75px;
   }
 }
 

@@ -13,9 +13,10 @@ body {
     padding: 0;
   }
 
-  @media print {
-    display: none;
-  }
+  // повна заборона друку документа
+  // @media print {
+  //   display: none;
+  // }
 }
 
 body.light-theme {
