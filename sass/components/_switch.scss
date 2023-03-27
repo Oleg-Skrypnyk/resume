@@ -7,10 +7,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    // display: flex;
-    position: absolute;
-    top: 50px;
-    right: 30px;
+    position: sticky;
+    display: inline-block;
+    top: 10px;
+    left: 88%;
+    margin-bottom: 10px;
   }
 
   @media print {
