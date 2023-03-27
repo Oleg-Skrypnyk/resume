@@ -94,7 +94,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -578,13 +578,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .about-me-container {
-    padding: 36px 30px 30px;
+    padding: 46px 30px 30px;
   }
 }
 
 @media screen and (min-width: 960px) {
   .about-me-container {
-    padding: 36px 75px 30px;
+    padding: 46px 75px 30px;
   }
 }
 
