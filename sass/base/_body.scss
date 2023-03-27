@@ -14,9 +14,9 @@ body {
   }
 
   // повна заборона друку документа
-  // @media print {
-  //   display: none;
-  // }
+  @media print {
+    display: none;
+  }
 }
 
 body.light-theme {
