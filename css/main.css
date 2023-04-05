@@ -343,6 +343,12 @@ body {
   }
 }
 
+@media print {
+  body {
+    display: none;
+  }
+}
+
 body.light-theme {
   background-color: #f5f7fa;
   color: #000;
@@ -923,9 +929,6 @@ img {
 }
 
 @media print {
-  @page {
-    background-color: #1e2939;
-  }
   body {
     background: #fff;
     padding: 0;
