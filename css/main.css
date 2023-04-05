@@ -343,12 +343,6 @@ body {
   }
 }
 
-@media print {
-  body {
-    display: none;
-  }
-}
-
 body.light-theme {
   background-color: #f5f7fa;
   color: #000;
@@ -929,9 +923,18 @@ img {
 }
 
 @media print {
+  @page {
+    background-color: #1e2939;
+  }
   body {
-    background: #f5f7fa;
+    background: #fff;
     padding: 0;
+  }
+  body.light-theme {
+    background-color: #fff;
+  }
+  body.dark-theme {
+    background-color: #fff;
   }
   .toolbar {
     display: none;
